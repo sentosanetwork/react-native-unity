@@ -133,7 +133,11 @@ public class ReactNativeUnityViewManager extends ReactNativeUnityViewManagerSpec
   public void pauseUnity(ReactNativeUnityView view, boolean pause) {
     if (isUnityReady()) {
       assert getPlayer() != null;
-      getPlayer().pause();
+      if (pause) {
+        getPlayer().pause();
+      } else {
+        getPlayer().resume();
+      }
     }
   }
 

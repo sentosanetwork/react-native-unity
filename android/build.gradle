@@ -108,7 +108,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation project(':unityLibrary')
-  implementation files("${project(':unityLibrary').projectDir}/libs/unity-classes.jar")
+  // implementation files("${project(':unityLibrary').projectDir}/libs/unity-classes.jar")
 }
 
 if (isNewArchitectureEnabled()) {
