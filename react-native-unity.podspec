@@ -48,5 +48,9 @@ Pod::Spec.new do |s|
     cp -R ../../../unity/builds/ios/ ios/
   CMD
 
-  s.vendored_frameworks = ["ios/UnityFramework.framework"]
+  s.vendored_frameworks = [
+    "ios/UnityFramework.framework",
+    "ios/NSR.framework",
+    "ios/StcCorder.framework"
+  ]
 end
